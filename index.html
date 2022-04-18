@@ -8,57 +8,352 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- start home  -->
-  <div class="header">
-    <div class="container">
-        <!-- start navbar -->
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="./images/logo.png" width="125px" alt=""></a>
+    <!-- start home  -->
+    <div class="header">
+        <div class="container">
+            <!-- start navbar -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" width="125px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="menu-items" class="parent">
+                        <li class="item"><a class="active" href="index.html">home</a></li>
+                        <li class="item"><a href="products.html">products</a></li>
+                        <li class="item"><a href="#about">about</a></li>
+                        <li class="item"><a href="#contact">contact</a></li>
+                        <li class="item"><a href="account.html">account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="./images/cart.png" width="30px" height="30px" alt=""></a>
+                <img src="./images/menu.png" class="menu-icon" onclick="menuHandler()" alt="">
             </div>
-            <nav>
-                <ul id="menu-items" class="parent">
-                    <li class="item"><a class="active" href="index.html">home</a></li>
-                    <li class="item"><a href="products.html">products</a></li>
-                    <li class="item"><a href="#about">about</a></li>
-                    <li class="item"><a href="#contact">contact</a></li>
-                    <li class="item"><a href="account.html">account</a></li>
-                </ul>
-            </nav>
-            <a href="cart.html"><img src="./images/cart.png" width="30px" height="30px" alt=""></a>
-            <img src="./images/menu.png" class="menu-icon" onclick="menuHandler()" alt="">
-        </div>
-        <!-- end navbar -->
+            <!-- end navbar -->
 
-        <!-- start home section -->
-        <div class="row">
-            <div class="col-2">
-                <h1>give your workout <br/> a new style!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Consequatur maxime explicabo atque. Nesciunt earum expedita ipsa, consequuntur dicta ducimus enim?</p>
-                <a href="" class="btn">explore now &#8594;</a>
+            <!-- start home section -->
+            <div class="row">
+                <div class="col-2">
+                    <h1>give your workout <br/> a new style!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Consequatur maxime explicabo atque. Nesciunt earum expedita ipsa, consequuntur dicta ducimus enim?</p>
+                    <a href="" class="btn">explore now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="./images/image1.png" alt="">
+                </div>
             </div>
-            <div class="col-2">
-                <img src="./images/image1.png" alt="">
+            <!-- end home section -->
+        </div>
+    </div>
+    <!-- end home  -->
+
+    <!-- start featured categories  -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3"><img src="./images/category-1.jpg" alt="">
+                    shoes
+                </div>
+                <div class="col-3"><img src="./images/category-2.jpg" alt=""></div>
+                <div class="col-3"><img src="./images/category-3.jpg" alt=""></div>
             </div>
         </div>
-        <!-- end home section -->
+    </div>
+    <!-- end featured categories  -->
+
+   <!-- start featured products  -->
+   <div class="small-container">
+    <h2 class="title">featured products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="product-detailes.html"><img src="./images/product-1.jpg" alt=""></a>
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-2.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-3.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-4.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+
+    <h2 class="title">latest products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="./images/product-5.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-6.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-7.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-8.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="./images/product-9.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-10.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-11.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/product-12.jpg" alt="">
+            <h4>red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
     </div>
 </div>
-<!-- end home  -->
+<!-- end featured products  -->
 
-    <!-- start features -->
-    <!-- end features -->
+<!-- start offer -->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="./images/exclusive.png" class="offer-img" alt="">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on RedStore</p>
+                <h1>smart band 4</h1>
+                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur aut unde quaerat cum nam veniam? Non animi illo corporis rem.</small>
+                <a href="" class="btn">explore now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end offer -->
 
-    <!-- start  new arrival -->
-    <!-- end  new arrival -->
+<!-- start testimonial -->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam quia vero similique animi repellendus odio quisquam ullam tempora laudantium?</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="./images/user-1.png" alt="">
+                <h3>user name</h3>
+            </div>
 
-    <!-- start -->
-    <!-- end -->
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam quia vero similique animi repellendus odio quisquam ullam tempora laudantium?</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="./images/user-2.png" alt="">
+                <h3>user name</h3>
+            </div>
 
-    <!-- start -->
-    <!-- end -->
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam quia vero similique animi repellendus odio quisquam ullam tempora laudantium?</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="./images/user-3.png" alt="">
+                <h3>user name</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end testimonial -->
 
-    <!-- start -->
-    <!-- end -->
+<!-- start brands -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="./images/logo-godrej.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-oppo.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-coca-cola.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-paypal.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-philips.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end brands -->
+
+<!-- start footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="./images/play-store.png" alt="">
+                    <img src="./images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./images/logo-white.png" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint quasi dicta. Dolorum, animi.
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagrm</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - </p>
+    </div>
+</div>
+<!-- end footer -->
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+
 </body>
 </html>

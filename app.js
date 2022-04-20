@@ -5,6 +5,13 @@ const menuHandler = ()=> {
     console.log('gggggg')
     menuItems.classList.toggle('show');
 }
+/*---- js for cart menu ----*/
+const basket = document.querySelector('#basket')
+const cart = document.querySelector('.cart')
+
+basket.addEventListener('click', ()=> {
+    cart.classList.toggle('show');
+})
 
 /*---- js for product-details ----*/
 const productImg = document.querySelector('#product-img');
@@ -32,21 +39,3 @@ const login = ()=> {
     indicator.style.transform = 'translateX(0px)';
 }
 
-
-$(document).ready(function() {
-    navimation({
-        parent: $('ul'),
-        item: $('li'),
-        event: 'mouseenter',
-        navimationTag: {
-            background: 'unset',
-            id: 'navimation',
-            height: '6px',
-            timeTranslate: '0.5s',
-            timeFunctionHide: 'linear',
-            css: {
-                'background-image': 'linear-gradient(90deg, rgba(36,0,0,0) 0%, rgd(32,199,83) 30%, rgb(32,199,83) 70%, rgba(255,0,0,0) 100%)',
-            },
-        },
-    });
-});

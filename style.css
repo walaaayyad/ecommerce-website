@@ -9,6 +9,7 @@
 }
 body {
     background-color: #eee;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6 {
     text-transform: capitalize;
@@ -362,9 +363,23 @@ input:focus {
 /*---- end products details page ----*/
 
 /*---- start cart page ----*/
+#basket {
+    cursor: pointer;
+}
 .cart {
     margin: 80px auto;
-}
+    width: 40%;
+    background-color: #fff;
+    padding: 15px 7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    }
+.cart.show {
+    transform: translateX(0px);
+    }
 table {
     width: 100%;
     border-collapse: collapse;
@@ -537,6 +552,9 @@ form .btn:focus {
     /*---- cart page ----*/
     .cart-info p {
         display: none;
+    }
+    .cart {
+        width: 80%;
     }
 }
 
